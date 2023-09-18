@@ -1,0 +1,45 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0px;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 102, 102);
+}
+.header{
+    text-align: center;
+    padding:3%;  
+}
+
+.logo{
+    background-color: white;
+    height:20%;
+    width:20%;
+    border: 5px solid black;
+}
+.description{
+    margin: 0% 10% 5%;
+}
+.signin{
+    text-align: center;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.btn{
+    display: inline block;
+    font-family: 'Poppins',sans-serif;
+    background-color: black;   
+    color: white;
+    border: 5px solid black;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 0 2%;
+    width: 15vw;
+    height: 8vh;
+}
+h1{
+    font-weight: 600;
+}

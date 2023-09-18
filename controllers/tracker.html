@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tracker.css">
+    <link rel="stylesheet" href="graph.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="container">
+    <div class="header">
+        <img src="/res/Black logo - no background.png " class="logo">
+        <h2 class="user">Hi, user !</h2>
+    </div>
+    <div class="goals">
+        <h1>Your Goals</h1>
+        <div class="charts">
+            <div class="card">
+                <div class="stepper pie animate" style="--p:0;--c:rgb(255, 102, 102);color:rgb(255, 102, 102);"> 0.0%</div>
+                <h2 class="step">Steps<br>/6000</h2>
+            </div>
+            <div class="card">
+                <div class="sleepper pie animate" style="--p:0;--c:rgb(255, 102, 102);color:rgb(255, 102, 102);"> 0.0%</div>
+                <h2 class="sleep">Sleep<br>4.1/8 HRS</h2><br><br><br>
+                <button class="btn">+</button>
+            </div>
+            <div class="card">
+                <div class="calorieper pie animate" style="--p:0;--c:rgb(255, 102, 102);color:rgb(255, 102, 102);"> 0.0%</div>
+                <h2 class="calorie">Calorie Intake<br>60/120 KCAL</h2>
+            </div>
+        </div>
+    </div>
+    <div class="routines">
+        <h1>Your Routines</h1>
+        <div class="workout">
+            <h2>Current Workout Routine: <strong></strong></h2>
+            <div class="plancon">
+            </div>
+        </div>
+    </div>
+    <div class="progress">
+        <h1 class="header">Progress Monitor</h1>
+        <div class="">
+            <table data-id="flexbox-bar-graph">
+                <tbody>
+                    <tr>
+                        <td style="border-top: 2px solid;border-bottom: 2px solid;border-left: 2px solid;">
+                            <span style="--data-set:0/100;"></span>
+                        </td>
+                        <td style="border-top: 2px solid;border-bottom: 2px solid;">
+                            <span style="--data-set:0/100;"></span>
+                        </td>
+                        <td style="border-top: 2px solid;border-bottom: 2px solid;">
+                            <span style="--data-set:0/100;"></span>
+                        </td>
+                        <td style="border-top: 2px solid;border-bottom: 2px solid;">
+                            <span style="--data-set:0/5;"></span>
+                        </td>
+                        <td style="border-top: 2px solid;border-bottom: 2px solid;">
+                            <span style="--data-set:0/5;"></span>
+                        </td>
+                        <td style="border-top: 2px solid;border-bottom: 2px solid;">
+                            <span style="--data-set:0/5;"></span>
+                        </td>
+                        <td style="border-top: 2px solid;border-bottom: 2px solid;border-right: 2px solid;">
+                            <span style="--data-set:0/5;"></span>
+                        </td>
+                        <td>
+                            <div class="card">
+                                <div class="weekpro pie animate"
+                                    style="--p:0;--c:white;color:white;"> 0.0%</div>
+                                <h2 class="week">Weekly Progress</h2>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="tracker.js"></script>
+</body>
+
+</html>

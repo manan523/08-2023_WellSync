@@ -1,0 +1,116 @@
+/* Basic default for mobile table styling */
+/* You should further customize this in your own custom CSS file */
+/* Bar Graph color variables */
+:root {
+    --bar-color-1: rgb(255, 102, 102);
+    --bar-color-2: rgb(255, 102, 102);
+    --bar-color-3: rgb(255, 102, 102);
+    --bar-color-4: rgb(255, 102, 102);
+    --bar-color-5: rgb(255, 102, 102);
+    --bar-color-6: rgb(255, 102, 102);
+    --bar-color-7: rgb(255, 102, 102);
+}
+
+[data-id="flexbox-bar-graph"] {
+    border-collapse: collapse;
+    margin: 3rem 0 0;
+    width: 100%;
+}
+[data-id="flexbox-bar-graph"] caption {
+    text-align: left;
+}
+[data-id="flexbox-bar-graph"] thead th {
+    text-align: right;
+}
+[data-id="flexbox-bar-graph"] thead th:nth-child(1),
+[data-id="flexbox-bar-graph"] tbody th {
+    text-align: left;
+}
+[data-id="flexbox-bar-graph"] tbody th {
+    font-weight: normal;
+    font-style: italic;
+}
+[data-id="flexbox-bar-graph"] tbody td {
+    text-align: right;
+}
+[data-id="flexbox-bar-graph"] tbody td p {
+    margin: 0;
+}
+/*********************************************************/
+/* Desktop graph styling */
+/*********************************************************/
+@media(min-width: 1000px) {
+    [data-id="flexbox-bar-graph"] {
+        background: transparent;
+        display: block;
+        min-height: 400px;
+        padding: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    [data-id="flexbox-bar-graph"] tbody {
+        display: flex;
+        justify-content: space-between;
+        min-height: 200px;
+        width: 100%;
+    }
+
+    [data-id="flexbox-bar-graph"] tbody tr {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding: 0 50px;
+        position: relative;
+        width: 100%;
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-end;
+    }
+
+    [data-id="flexbox-bar-graph"] tbody tr td span {
+        display: block;
+        height: calc(var(--data-set) * 100%);
+        width: 20px;
+    }
+
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(1) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(2):before {
+        background: var(--bar-color-1);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(2) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(3):before {
+        background: var(--bar-color-2);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(3) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(4):before {
+        background: var(--bar-color-3);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(4) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(5):before {
+        background: var(--bar-color-4);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(5) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(6):before {
+        background: var(--bar-color-5);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(6) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(7):before {
+        background: var(--bar-color-5);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(7) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(8):before {
+        background: var(--bar-color-5);
+    }
+
+    [data-id="flexbox-bar-graph"] tbody tr td p {
+        font-size: 90%;
+        margin: 0;
+        text-align: center;
+    }
+}

@@ -1,0 +1,146 @@
+@property --p{
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
+
+  h1{
+    font-weight: 600;
+  }
+  
+  .pie {
+    --p:20;
+    --b:50px;
+    --c:darkred;
+    --w:300px;
+    width:var(--w);
+    aspect-ratio:1;
+    position:relative;
+    display:inline-grid;
+    margin:5px;
+    place-content:center;
+    font-size:25px;
+    font-weight:bold;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  .pie:before,
+  .pie:after {
+    content:"";
+    position:absolute;
+    border-radius:50%;
+  }
+  .pie:before {
+    inset:0;
+    background:
+      radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+      conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+  }
+  .pie:after {
+    inset:calc(50% - var(--b)/2);
+    background:var(--c);
+    transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+  }
+  .animate {
+    animation:p 1s .5s both;
+  }
+  @keyframes p {
+    from{--p:0}
+  }
+  
+  body {
+    background:#ddd;
+  }
+/*********************************/
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background-color: rgb(255, 102, 102);
+}
+.user{
+    display: inline-block;
+    position: absolute;
+    right:10%;
+    top: 9%;
+}
+.logo{
+    background-color: white;
+    height:20%;
+    width:20%;
+    border: 5px solid black;
+}
+.header{
+    text-align: center;
+    padding:3.2%;  
+}
+.goals{
+    text-align: center;
+    background-color: black;
+    padding: 1% 0% 3%;
+    color: rgb(255, 102, 102);
+}
+.charts{
+    margin-top: 4%;
+    display:flex;
+    justify-content: center;
+}
+.card{
+    text-align: center;
+    margin: 0 5%;
+}
+.card h2{
+    font-weight: 500;
+}
+.routines{
+    text-align: center;
+    background-color: rgb(255, 102, 102);;
+}
+h1{
+    font-size: 2.6rem;
+}
+.routines h1{
+    font-weight: 700;
+}
+.routines h2{
+    font-weight: 500;
+    font-size: 1.8rem;
+    border: 4px solid black;
+    border-bottom: 10px solid black;
+    margin: 0;
+}
+.routines h3{
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.5;
+}
+.workout{
+    margin: 4% 34% 3%;
+    border: 6px solid black;
+}
+.progress{
+    background-color: black;
+    color: white;
+    padding-bottom: 5%;
+}
+.progress .header{
+    margin:0;
+    text-align: center;
+}
+.btn:hover{
+    background-color: white;
+}
+.btn{
+    height: 4vw;
+    width: 4vw;
+    background-color: rgb(255, 102, 102);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    border: none;
+}
+.week{
+    margin-bottom: 0;
+}

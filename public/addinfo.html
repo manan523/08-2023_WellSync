@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <div class="login-page">
+    <div class="form">
+      <form class="login-form" action="/addinfo" method="post">
+        <h2>Enter your latest data for the day &#128516</h2>
+        <input name="steps" required="required" type="number" step="1" max="6000" placeholder="Enter Steps Count" />
+        <input name="sleep" required="required" type="number" step="0.01" max="8" placeholder="Enter Sleep Duration (HRS)" />
+        <input name="calorie" required="required" type="number" step="1" max="2500" placeholder="Enter Calories Intake (KCAL)" />
+        <button type="submit">Record</button>
+      </form>
+    </div>
+  </div>
+  
+  
+
+
+</body>
+
+</html>
